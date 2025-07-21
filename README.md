@@ -1,8 +1,23 @@
-# Multilingual Voice Transcriber and Translator
+# 🎙️ Multilingual Voice Transcriber and Translator
 
-This application is a multilingual voice transcriber and translator built with PyQt5, Google Text-to-Speech (gTTS), and the `translate` and `speech_recognition` libraries.
+A multilingual voice transcriber and translator built with **PyQt5**, **gTTS**, and **speech_recognition**, enabling real-time speech transcription, translation, and voice playback across multiple languages.
 
-## Table of Contents
+---
+
+## 🖼️ UI Screenshots
+
+### 🔹 Application UI
+![App UI](assets/app_ui.png)
+
+### 🔹 Start Recording Button
+![Start Recording](assets/start_recording.png)
+
+### 🔹 Translated Output
+![Translated Output](assets/translated_output.png)
+
+---
+
+## 📚 Table of Contents
 
 - [Problem Statement](#problem-statement)
 - [Features](#features)
@@ -11,51 +26,42 @@ This application is a multilingual voice transcriber and translator built with P
 - [License](#license)
 - [Note](#note)
 
-## Problem Statement
+---
 
-In our increasingly globalized world, language barriers can pose significant challenges. This project aims to address this need by developing a multilingual voice transcriber and translator. The application listens to spoken language, transcribes it into text, translates the text into a selected language, and then converts the translated text back into speech, thereby facilitating communication across different languages.
+## ❓ Problem Statement
 
-## Features
+In our increasingly globalized world, **language barriers** can pose significant challenges. This project aims to address that need by enabling:
 
-- **Voice Transcription**: The application can transcribe spoken language into text using Google's Speech Recognition service.
-- **Translation**: The transcribed text can be translated into various languages using the `translate` library.
-- **Text-to-Speech**: The translated text can be converted back into speech using Google's Text-to-Speech service (gTTS).
-- **Download Audio**: The audio of the translated text can be downloaded as an MP3 file.
-- **Copy Text**: Both the transcribed and translated texts can be copied to the clipboard.
+> 🔁 Voice ➝ Transcription ➝ Translation ➝ Text-to-Speech
 
-## Installation
+The application listens to spoken language, converts it to text, translates it into a target language, and finally speaks the translated output aloud — enabling seamless multilingual communication.
 
-_**Note**: Currently, Python 3.12.2 is being used as the interpreter for this project._
+---
 
-1. Clone this repository.
-2. Install the dependencies:
+## ✨ Features
 
-```bash
-pip install -r requirements.txt
-```
+- 🎤 **Voice Transcription**  
+  Transcribes spoken language into text using Google's `speech_recognition`.
 
-## Usage
+- 🌐 **Translation**  
+  Converts transcribed text into multiple languages using the `translate` library.
 
-- Run the application:
+- 🔊 **Text-to-Speech (TTS)**  
+  Uses Google Text-to-Speech (`gTTS`) to convert translated text into audio output.
 
-```bash
-python main.py
-```
+- 💾 **Download MP3**  
+  Download the translated speech as an `.mp3` audio file.
 
-- Select the target language for translation from the dropdown menu.
+- 📋 **Copy Text**  
+  Easily copy both transcribed and translated text to the clipboard.
 
-- Click the 'Start Recording' button to start the voice transcription. Speak clearly into the microphone.
+---
 
-- The application will transcribe the spoken language into text, translate the text into the selected language, and then convert the translated text back into speech.
+## ⚙️ Installation
 
-- The 'Download Audio' button allows you to download the audio of the translated text as an MP3 file.
+> _Tested with **Python 3.12.2**_
 
-- The 'Copy Spoken Text' and 'Copy Translated Text' buttons allow you to copy the transcribed and translated texts to the clipboard, respectively.
-
-## License
-
-This project is licensed under the terms of the [MIT license](LICENSE)
-
-## Note
-
-This project is a personal endeavor and updates or improvements are made based on my interest and availability. While I strive to ensure its functionality, the application may contain bugs and does not cover all edge cases. Your patience and understanding are appreciated.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/AbinashAdithya/Multilingual-Voice-Transcriber-and-Translator.git
+   cd Multilingual-Voice-Transcriber-and-Translator
